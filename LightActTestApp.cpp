@@ -13,7 +13,7 @@ namespace gui = ImGui;
 
 
 glm::vec2 velocityAfterColission(float m1, float m2, glm::vec2 v1, glm::vec2 v2) {
-	return ((m1 - m2) / (m1 + m2)) * v1 + ((2 * m2) / (m1 + m2)) * v2;
+	return ((m1 - m2) / (m1 + m2)) * (v1*1.2f) + ((2 * m2) / (m1 + m2)) * (v2*1.2f);
 }
 
 namespace PhysicsEngine {
